@@ -1,0 +1,32 @@
+Initialize engine version: 4.3.2f1 (0517a5ae8669)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [igdumd32.dll 9.17.10.3347]
+    Renderer: Intel(R) HD Graphics 3000
+    Vendor:   Intel
+    VRAM:     848 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=1 RAWZ=0 NULL=1 RESZ=1 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\Programs\GitHub\Co-op_3D_game\Build\try_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Programs\GitHub\Co-op_3D_game\Build\try_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Programs\GitHub\Co-op_3D_game\Build\try_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading E:\Programs\GitHub\Co-op_3D_game\Build\try_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: E:\Programs\GitHub\Co-op_3D_game\Build\try_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Programs\GitHub\Co-op_3D_game\Build\try_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Programs\GitHub\Co-op_3D_game\Build\try_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading E:\Programs\GitHub\Co-op_3D_game\Build\try_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: E:\Programs\GitHub\Co-op_3D_game\Build\try_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading E:\Programs\GitHub\Co-op_3D_game\Build\try_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.210 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Shader 'aScattering 2.0': fallback shader 'None' not found
+UnloadTime: 0.457829 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 401.
+Total: 1.853184 ms (FindLiveObjects: 0.018295 ms CreateObjectMapping: 0.010709 ms MarkObjects: 0.105309 ms  DeleteObjects: 1.198568 ms)
+
+Platform assembly: E:\Programs\GitHub\Co-op_3D_game\Build\try_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: E:\Programs\GitHub\Co-op_3D_game\Build\try_Data\Managed\System.dll (this message is harmless)
