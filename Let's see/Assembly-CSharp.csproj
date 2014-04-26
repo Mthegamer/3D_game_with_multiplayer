@@ -56,7 +56,9 @@
      <Compile Include="Assets\Scripts\NetworkManager.cs" />
      <Compile Include="Assets\Scripts\SpawnSpot.cs" />
      <Compile Include="Assets\Scripts\axe_swing.cs" />
+     <Compile Include="Assets\Scripts\doors_portal.cs" />
      <Compile Include="Assets\Scripts\menu_script.cs" />
+     <Compile Include="Assets\Scripts\mouse_movement.cs" />
      <Compile Include="Assets\_Imported\Photon Unity Networking\Plugins\PhotonNetwork\CustomTypes.cs" />
      <Compile Include="Assets\_Imported\Photon Unity Networking\Plugins\PhotonNetwork\Enums.cs" />
      <Compile Include="Assets\_Imported\Photon Unity Networking\Plugins\PhotonNetwork\Extensions.cs" />
@@ -92,7 +94,6 @@
      <Compile Include="Assets\_Imported\Photon Unity Networking\UtilityScripts\TimeKeeper.cs" />
      <Compile Include="Assets\_Imported\skydome\Sun.cs" />
      <Compile Include="Assets\_Imported\skydome\skydomeScript2.cs" />
-     <Compile Include="Assets\mouse_movement.cs" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Plugins\release_history.txt" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />

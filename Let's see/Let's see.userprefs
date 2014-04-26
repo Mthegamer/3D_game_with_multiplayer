@@ -1,9 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\NetworkManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FootSteps.cs">
     <Files>
-      <File FileName="Assets\Scripts\BotControlScript.cs" Line="10" Column="20" />
-      <File FileName="Assets\Scripts\NetworkManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BotControlScript.cs" Line="62" Column="37" />
+      <File FileName="Assets\Scripts\FootSteps.cs" Line="10" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

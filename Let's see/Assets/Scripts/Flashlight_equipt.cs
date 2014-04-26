@@ -13,8 +13,9 @@ public class Flashlight_equipt : MonoBehaviour {
 	
 	}
 	void OnTriggerEnter(Collider other)
-	{	this.gameObject.SetActive(false);
-		//other.gameObject.GetComponent("flashlight").
-		flash.gameObject.SetActive(true);
+	{	
+		this.gameObject.SetActive(false);
+		GameObject.FindGameObjectWithTag("flashlight").GetComponent<MeshRenderer>().enabled=true;
+		GameObject.FindGameObjectWithTag("light_flash").GetComponent<FlashLight>().enabled=true;
 	}
 }

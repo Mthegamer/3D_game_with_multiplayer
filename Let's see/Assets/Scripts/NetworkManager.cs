@@ -4,9 +4,11 @@ using System.Collections;
 public class NetworkManager : MonoBehaviour {
 	public Camera standbyCamera;
 	SpawnSpot[] spawnSpots;
-	GameObject[] players;
 	// Use this for initialization
 	void Start () {
+
+		DontDestroyOnLoad(this);
+		Screen.lockCursor=true;
 		spawnSpots = GameObject.FindObjectsOfType<SpawnSpot>();
 		Connect();
 	}
@@ -29,24 +31,19 @@ public class NetworkManager : MonoBehaviour {
 		SpawnPlayer();
 	}
 	void SpawnPlayer(){
-		players = GameObject.FindGameObjectsWithTag("Player");
-			//.FindObjectsOfType<BotControlScript>();
 		SpawnSpot mySpawnSpot = spawnSpots[Random.Range(0, spawnSpots.Length)];
 		GameObject myPlayerGO;
 		if(PhotonNetwork.countOfPlayersInRooms==0)
-		{
-			myPlayerGO = PhotonNetwork.Instantiate("PlayerController",mySpawnSpot.transform.position,mySpawnSpot.transform.rotation,0);
-		}
+			{
+				myPlayerGO = PhotonNetwork.Instantiate("PlayerController",mySpawnSpot.transform.position,mySpawnSpot.transform.rotation,0);
+			}
 			else 
-		{
-			myPlayerGO = PhotonNetwork.Instantiate("PlayerController2",mySpawnSpot.transform.position,mySpawnSpot.transform.rotation,0);
-		}
+			{
+				myPlayerGO = PhotonNetwork.Instantiate("PlayerController2",mySpawnSpot.transform.position,mySpawnSpot.transform.rotation,0);
+			}
 		standbyCamera.gameObject.SetActive(false);
-		//((MonoBehaviour)myPlayerGO.GetComponent("FPSInputController")).enabled=true;
 		((MonoBehaviour)myPlayerGO.GetComponent("MouseLook")).enabled=true;
 		((MonoBehaviour)myPlayerGO.GetComponent("BotControlScript")).enabled=true;
-
 		myPlayerGO.transform.FindChild("Main Camera").gameObject.SetActive(true);
-
 	}
 }

@@ -34,15 +34,12 @@ public class menu_script : MonoBehaviour {
 			door3.animation.Play("door3");
 			audio.Play();
 		}
-
 	}
 	void OnMouseExit(){
-		//renderer.material.color=Color.white;
 		if(number==1){
 			animation.Play("selected-back");
 			door1.animation.Play("door1-back");	
 			door1.gameObject.SetActive(false);
-
 		}
 		if(number==2){
 			animation.Play("selected-options-back");

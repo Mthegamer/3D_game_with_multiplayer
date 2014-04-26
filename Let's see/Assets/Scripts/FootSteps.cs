@@ -7,19 +7,15 @@ public class FootSteps : MonoBehaviour {
 	public AudioClip walk;
 	public GameObject player;
 	bool isWalking = false;
-	float walkAudioSpeed  = 0.75f;
+	float walkAudioSpeed  = 0.70f;
 	private float walkAudioTimer  = 0.0f;
-	
 	private BotControlScript chCtrl;
-	
+
 	void Start () {
-		//chMotor =  GetComponent<CharacterMotor>();
 		chCtrl= player.GetComponent<BotControlScript>();
 	}
-	
 	// Update is called once per frame
 	void Update () {
- 
 	    if ( chCtrl.hitInfo.distance<1.7f )
 		    {
 		        PlayFootsteps();
@@ -29,20 +25,17 @@ public class FootSteps : MonoBehaviour {
 		        walkAudioTimer = 0.0f;
 		    }
 	}
-
 	void PlayFootsteps()
 	{
 	    if ( Input.GetAxis( "Horizontal" )!= 0 || Input.GetAxis( "Vertical" )!= 0 )
 	    {
 	         isWalking = true;
-	       
 	    }
 	    else
 	    {
 	       // Stopped
 	       isWalking = false;
 	    }
-	 
 	    // Play Audio
 	    if ( isWalking )
 	    {
@@ -64,7 +57,6 @@ public class FootSteps : MonoBehaviour {
 	    {
 	       audio.Stop();
 	    }
-	 
 	    // increment timers
 	    walkAudioTimer += Time.deltaTime;
 	}

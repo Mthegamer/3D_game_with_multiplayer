@@ -6,9 +6,8 @@ public class Doors_appear : MonoBehaviour {
 	public GameObject door2;
 	public GameObject door3;
 	private int activated=0;
-
 	void OnTriggerEnter(Collider other) {
-		
+		//Application.LoadLevel("Demo6");
 		if(activated==0){
 		activated=1;
 		door1.animation.Play("Lifting_door2");
@@ -19,5 +18,4 @@ public class Doors_appear : MonoBehaviour {
 		door3.audio.Play();
 		}
 	}
-	
 }

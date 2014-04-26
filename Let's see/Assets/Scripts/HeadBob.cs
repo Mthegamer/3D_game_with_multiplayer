@@ -4,7 +4,7 @@ using System.Collections;
 public class HeadBob : MonoBehaviour {
 	private float timer = 0.0f;
 	float bobbingSpeed = 0.18f;
-	float bobbingAmount = 0.2f;
+	float bobbingAmount = 0.08f;
 	float midpoint = 2.0f;
 	float waveslice;
 	float horizontal;
