@@ -2,6 +2,7 @@ private var motor : CharacterMotor;
 
 // Use this for initialization
 function Awake () {
+	Screen.showCursor = false;
 	motor = GetComponent(CharacterMotor);
 }
 

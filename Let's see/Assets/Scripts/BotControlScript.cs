@@ -13,7 +13,7 @@ public class BotControlScript : MonoBehaviour
 	[System.NonSerialized]
 	//public Transform enemy;						// a transform to Lerp the camera to during head look
 
-	public float animSpeed = 0.5f;				// a public setting for overall animator animation speed
+	public float animSpeed = 1f;				// a public setting for overall animator animation speed
 	public float lookSmoother = 3f;				// a smoothing setting for camera motion
 	public bool useCurves;						// a setting for teaching purposes to show use of curves
 	public RaycastHit hitInfo = new RaycastHit();
@@ -51,21 +51,7 @@ public class BotControlScript : MonoBehaviour
 		
 		if(anim.layerCount ==2)		
 			layer2CurrentState = anim.GetCurrentAnimatorStateInfo(1);	// set our layer2CurrentState variable to the current state of the second Layer (1) of animation
-		
-		
-		// LOOK AT ENEMY
 
-		/*if(Input.GetButton("Fire2"))
-		{
-			// ...set a position to look at with the head, and use Lerp to smooth the look weight from animation to IK (see line 54)
-			anim.SetLookAtPosition(enemy.position);
-			lookWeight = Mathf.Lerp(lookWeight,1f,Time.deltaTime*lookSmoother);
-		}
-		// else, return to using animation for the head by lerping back to 0 for look at weight
-		else
-		{
-			lookWeight = Mathf.Lerp(lookWeight,0f,Time.deltaTime*lookSmoother);
-		}*/
 
 		if (currentBaseState.nameHash == locoState)
 		{

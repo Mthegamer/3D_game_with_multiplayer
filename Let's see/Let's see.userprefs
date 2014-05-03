@@ -1,9 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FootSteps.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\NetworkManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\BotControlScript.cs" Line="62" Column="37" />
-      <File FileName="Assets\Scripts\FootSteps.cs" Line="10" Column="30" />
+      <File FileName="Assets\Scripts\NetworkController.cs" Line="35" Column="97" />
+      <File FileName="Assets\Scripts\doors_portal.cs" Line="17" Column="35" />
+      <File FileName="Assets\_Imported\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs" Line="170" Column="1" />
+      <File FileName="Assets\_Imported\Photon Unity Networking\Plugins\PhotonNetwork\PhotonView.cs" Line="217" Column="1" />
+      <File FileName="Assets\Scripts\NetworkManager.cs" Line="64" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

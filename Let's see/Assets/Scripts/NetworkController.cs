@@ -14,6 +14,7 @@ public class NetworkController : Photon.MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
+		if(Input.GetKey (KeyCode.Escape))Application.Quit();
 		if(photonView.isMine)
 			{
 				//do nothing
@@ -28,6 +29,16 @@ public class NetworkController : Photon.MonoBehaviour {
 		{
 			if(PhotonNetwork.isMasterClient)transform.position= new Vector3(-1.325348f,3.4429392f,24.69591f);
 			else transform.position=new Vector3(4.5444218f,3.4429392f,24.69591f);
+		}
+		if (level == 3)
+		{
+			if(PhotonNetwork.isMasterClient)transform.position= new Vector3(-5.403702f,1.187183f,-3.45331f);
+			else transform.position=new Vector3(-6.294268f,1.1871832f,-3.45331f);
+		}
+		if (level == 1)
+		{
+			if(PhotonNetwork.isMasterClient)transform.position= new Vector3(-4.215148f,20.53749f,-7.243308f);
+			else transform.position=new Vector3(-4.215148f,20.18412f,-7.2433087f);
 		}
 		
 	}

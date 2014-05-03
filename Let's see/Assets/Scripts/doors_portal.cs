@@ -14,7 +14,7 @@ public class doors_portal : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider other) {
 		PhotonNetwork.isMessageQueueRunning = false;
-		Application.LoadLevel("Demo6");
+		Application.LoadLevel("Graveyard");
 		PhotonNetwork.isMessageQueueRunning = true;
 	}
 

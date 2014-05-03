@@ -7,7 +7,7 @@ public class FootSteps : MonoBehaviour {
 	public AudioClip walk;
 	public GameObject player;
 	bool isWalking = false;
-	float walkAudioSpeed  = 0.70f;
+	float walkAudioSpeed  = 0.35f;
 	private float walkAudioTimer  = 0.0f;
 	private BotControlScript chCtrl;
 
